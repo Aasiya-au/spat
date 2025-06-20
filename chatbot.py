@@ -122,7 +122,7 @@ class ChatBot(QWidget):
     def __init__(self, user_id):
         super().__init__()
         self.user_id = user_id
-        self.API_KEY = "AIzaSyDmhT1MhYZjp_NC8nREJ1j1szFr1SVmbfc"
+        self.API_KEY = "YOUR_API_KEY"
         ai.configure(api_key=self.API_KEY)
         self.model = ai.GenerativeModel("gemini-2.0-flash")
         self.chat_messages = []  # Stores all chat messages
